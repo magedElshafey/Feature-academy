@@ -1,7 +1,7 @@
 import axios from "axios";
 import { useTranslation } from "react-i18next";
 import { useEffect } from "react";
-import { apiUrl } from "./config";
+import { apiUrl } from "../../services/api-routes/apiRoutes";
 import { useAuth } from "../../store/AuthProvider";
 import { toast } from "sonner";
 import { useLocation, useNavigate } from "react-router-dom";
