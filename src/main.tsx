@@ -9,8 +9,7 @@ import { HelmetProvider } from "react-helmet-async";
 import AxiosConfig from "./services/api/Axios.ts";
 import LanguageProvider from "./store/LanguageProvider.tsx";
 import ScrollToTop from "./components/common/scrollToTop/ScrollToTop.tsx";
-import { ToastContainer } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
+import { Toaster } from "sonner";
 createRoot(document.getElementById("root")!).render(
   <Router>
     <AuthProvider>
@@ -18,7 +17,7 @@ createRoot(document.getElementById("root")!).render(
         <QueryClientProvider client={queryClient}>
           <LanguageProvider>
             <AxiosConfig />
-            <ToastContainer />
+            <Toaster position="top-center" richColors closeButton />
             <App />
           </LanguageProvider>
           <ScrollToTop />

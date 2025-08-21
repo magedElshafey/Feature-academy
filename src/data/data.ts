@@ -66,3 +66,12 @@ export const socials: Socials[] = [
     icon: FaSnapchatGhost,
   },
 ];
+export const protectedRoutes: string[] = [
+  "/cart",
+  "/checkout",
+  "/payment",
+  "/my-profile",
+  "/my-wishlist",
+  "/my-addresses",
+  "/dashboard",
+];
