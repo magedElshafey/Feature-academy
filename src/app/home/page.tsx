@@ -9,8 +9,9 @@ import PaymentMethodsSkeleton from "../../components/common/loader/skeltons/Paym
 import ProductDetailsSkeleton from "../../components/common/loader/skeltons/ProductDetailsSkeleton";
 import ProductSkelton from "../../components/common/loader/skeltons/ProductSkelton";
 import SliderSkeleton from "../../components/common/loader/skeltons/SliderSkelton";
-
+import { useTranslation } from "react-i18next";
 const HomePage = () => {
+  const { t } = useTranslation();
   return (
     <div>
       <SliderSkeleton />
@@ -34,6 +35,7 @@ const HomePage = () => {
       <div className="my-4">
         <CartTableSkeleton />
       </div>
+      <p>{t("test")}</p>
     </div>
   );
 };
