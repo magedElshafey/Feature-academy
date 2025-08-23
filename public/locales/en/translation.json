@@ -1,3 +1,18 @@
 {
-  "test": "test"
+  "Home": "Home",
+  "About": "About",
+  "courses": "courses",
+  "conferences": "conferences",
+  "Arab Training Stars": "Arab Training Stars",
+  "team": "team",
+  "our clients": "our clients",
+  "forums": "forums",
+  "branches": "branches",
+  "login": "login",
+  "contact us": "contact us",
+  "technical support": "technical support",
+  "qutell technology": "qutell technology",
+  "all rights reserved": "all rights reserved",
+  "important links": "SiteMap",
+  "By logging in, you can use the site's features.": "By logging in, you can use the site's features."
 }

@@ -1,22 +1,15 @@
 import { Link } from "react-router-dom";
 
 interface logoProps {
-    logo?: string;
-    style?: React.CSSProperties;
+  logo?: string;
 }
 
-const Logo: React.FC<logoProps> = ({ logo, style }) => {
-    return (
-        <Link to="/">
-            <img
-                style={style}
-                alt="logo"
-                src={logo}
-                className={`${style ? "" : " w-[100px] h-[28px] md:w-[136px] md:h-[39px]"
-                    }`}
-            />
-        </Link>
-    );
+const Logo: React.FC<logoProps> = ({ logo }) => {
+  return (
+    <Link to="/" className="shrink-0">
+      <img alt="logo" src={logo} className="h-[44px] w-auto object-contain" />
+    </Link>
+  );
 };
 
 export default Logo;

@@ -20,12 +20,32 @@ export const navLinks: Nav[] = [
     link: "/about",
   },
   {
-    name: "Contact",
-    link: "/contact",
+    name: "courses",
+    link: "/courses",
   },
   {
-    name: "services",
-    link: "/services",
+    name: "conferences",
+    link: "/conferences",
+  },
+  {
+    name: "Arab Training Stars",
+    link: "/arab-training-stars",
+  },
+  {
+    name: "team",
+    link: "/team",
+  },
+  {
+    name: "our clients",
+    link: "/our-clients",
+  },
+  {
+    name: "forums",
+    link: "/forums",
+  },
+  {
+    name: "branches",
+    link: "/branches",
   },
 ];
 

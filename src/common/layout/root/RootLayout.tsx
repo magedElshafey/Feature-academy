@@ -1,5 +1,5 @@
 import { Outlet, useLocation } from "react-router-dom";
-import useLocalizeDocumentAttributes from "../hooks/useLocalizeDocumentAttributes";
+import useLocalizeDocumentAttributes from "../../hooks/useLocalizeDocumentAttributes";
 import { useEffect } from "react";
 const RootLayout = () => {
   const { pathname } = useLocation();

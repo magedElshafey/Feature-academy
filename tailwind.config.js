@@ -16,7 +16,10 @@ export default {
         text: {
           light: "#1e293b",
           dark: "#f8fafc",
+          gray: "#828282",
         },
+        darkBlue: "#0642BC",
+        lightBlue: "#3274FF",
       },
     },
   },

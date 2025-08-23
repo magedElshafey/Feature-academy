@@ -23,7 +23,7 @@
     }
 
     body {
-        @apply bg-background-light text-text-light antialiased transition-colors duration-300;
+        @apply capitalize bg-background-light text-text-light antialiased transition-colors duration-300;
     }
 
     /* Dark mode */
@@ -41,10 +41,10 @@
     }
 
     p {
-        @apply leading-relaxed text-gray-700 dark:text-gray-300;
+        @apply leading-relaxed;
     }
 
     a {
-        @apply text-indigo-600 hover:underline dark:text-indigo-400;
+        @apply hover:underline;
     }
 }

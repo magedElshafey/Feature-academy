@@ -1,3 +1,20 @@
 {
-  "test": "تيست"
+  "Home": "الرئيسية",
+  "About": "من نحن",
+  "courses": "الدورات التدريبية",
+  "conferences": "المؤتمرات",
+  "Arab Training Stars": "نجوم التدريب العرب",
+  "team": "فريق العمل",
+  "our clients": "عملاؤنا",
+  "forums": "المنتديات",
+  "branches": "الفروع",
+  "login": "تسجيل الدخول",
+  "contact us": "اتصل بنا",
+  "technical support": "الدعم الفني",
+  "qutell technology": "كيوتل تيكنولوجي",
+  "all rights reserved": "جميع الحقوق محفوظة",
+  "important links": "روابط سريعة",
+  "By logging in, you can use the site's features.": "بتسجيلك الدخول تتمكن من استخدام مميزات الموقع",
+  "user name": "إسم المستخدم",
+  "password": "كلمة المرور"
 }
