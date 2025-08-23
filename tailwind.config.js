@@ -1,18 +1,22 @@
 /** @type {import('tailwindcss').Config} */
 import typography from "@tailwindcss/typography";
 export default {
+  darkMode: "class",
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
-      colors: {
-        orangeColor: "#FE5621",
-        blueColor: "#0D47A1",
-        textColor: "#656565",
-        grayColor: "#F6F6F6",
-        grayBg: "#212524",
+      fontFamily: {
+        din: ["DINNextLTArabic", "sans-serif"],
       },
-      boxShadow: {
-        mainShadow: "0px 0px 60px #00000012",
+      colors: {
+        background: {
+          light: "#ffffff",
+          dark: "#0f172a",
+        },
+        text: {
+          light: "#1e293b",
+          dark: "#f8fafc",
+        },
       },
     },
   },

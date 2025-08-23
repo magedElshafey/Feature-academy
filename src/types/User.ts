@@ -16,4 +16,5 @@ export interface User {
   type?: string;
   notify?: boolean;
   has_subscription?: boolean;
+  role: string;
 }

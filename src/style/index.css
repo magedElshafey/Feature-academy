@@ -1,127 +1,50 @@
+/* imports */
+@import "./font.css";
+@import "./layout.css";
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-* {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-}
 
-:root {
-    --orangeColor: #fe5621;
-    --blueColor: #0d47a1;
-    --textColor: #656565;
-    --grayColor: #f6f6f6;
-    --grayBg: #212524;
-}
+@layer base {
 
-body {
-    overflow-x: hidden;
-    text-transform: capitalize;
-    font-family: 'Poppins', sans-serif;
-}
-
-html {
-    scroll-behavior: smooth;
-}
-
-/* default classes */
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-weight: bold;
-}
-
-h1 {
-    font-size: 2.125rem;
-}
-
-h2 {
-    font-size: 1.875rem;
-}
-
-h3 {
-    font-size: 1.5rem;
-}
-
-h4 {
-    font-size: 1.25rem;
-}
-
-h5 {
-    font-size: 1.125rem;
-}
-
-h6 {
-    font-size: 1rem;
-}
-
-@media screen and (max-width: 768px) {
-    h1 {
-        font-size: 1.5rem;
+    /* Reset */
+    * {
+        @apply m-0 p-0 box-border;
     }
 
-}
-
-@media screen and (max-width: 480px) {
-    h2 {
-        font-size: 1.25rem;
-    }
-}
-
-@media screen and (max-width: 320px) {
-    h3 {
-        font-size: 1.125rem;
-    }
-}
-
-@media screen and (max-width: 320px) {
-    h4 {
-        font-size: 1.125rem;
+    html,
+    body {
+        @apply font-din;
     }
 
-}
-
-@media screen and (max-width: 320px) {
-    h5 {
-        font-size: 1rem;
+    html {
+        @apply scroll-smooth;
     }
-}
 
-@media screen and (max-width: 320px) {
+    body {
+        @apply bg-background-light text-text-light antialiased transition-colors duration-300;
+    }
+
+    /* Dark mode */
+    .dark body {
+        @apply bg-background-dark text-text-dark;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
     h6 {
-        font-size: 0.875rem;
-    }
-}
-
-a.active {
-    font-weight: bold;
-    color: var(--orangeColor);
-}
-
-.main {
-    min-height: calc(100vh - 338px);
-}
-
-@media screen and (max-width: 768px) {
-    .main {
-        min-height: calc(100vh - 540px);
+        @apply font-bold text-gray-900 dark:text-gray-100;
     }
 
-}
+    p {
+        @apply leading-relaxed text-gray-700 dark:text-gray-300;
+    }
 
-/* Hide spinner arrows for input type number */
-input[type="number"]::-webkit-inner-spin-button,
-input[type="number"]::-webkit-outer-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
-}
-
-input[type="number"] {
-    -moz-appearance: textfield;
+    a {
+        @apply text-indigo-600 hover:underline dark:text-indigo-400;
+    }
 }
