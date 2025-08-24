@@ -20,12 +20,12 @@ const AuthCard: React.FC<AuthCardProps> = ({
       className="w-full max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-6"
     >
       {title && (
-        <header className="mb-6 text-center">
+        <header className="mb-4">
           <h1 className="text-2xl font-bold text-gray-900 dark:text-white">
             {t(title)}
           </h1>
           {description && (
-            <p className="mt-2 text-base text-gray-600 dark:text-gray-400">
+            <p className="mt-2 text-base text-text-gray dark:text-gray-400">
               {t(description)}
             </p>
           )}
