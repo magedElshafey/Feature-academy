@@ -48,3 +48,7 @@
         @apply hover:underline;
     }
 }
+
+html {
+    scroll-behavior: smooth;
+}

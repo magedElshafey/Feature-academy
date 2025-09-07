@@ -16,5 +16,14 @@
   "important links": "روابط سريعة",
   "By logging in, you can use the site's features.": "بتسجيلك الدخول تتمكن من استخدام مميزات الموقع",
   "user name": "إسم المستخدم",
-  "password": "كلمة المرور"
+  "password": "كلمة المرور",
+  "forget password?": "هل نسيت كلمة المرور؟",
+  "remember me": "تذكرني",
+  "user name is required": "إسم المستخدم مطلوب",
+  "password must be at least 6 characters": "كلمة المرور يجب ان تتكون من 6 ارقام علي الأقل",
+  "don't have an account ?": "ليس لديك حساب ؟",
+  "create an account": "إنشاء حساب",
+  "Create a new account": "انشاء حساب جديد",
+  "Sign in with Google Account": "تسجيل الدخول بحساب جوجل",
+  "Sign in with facebook Account": "تسجيل الدخول بحساب فيسبوك"
 }

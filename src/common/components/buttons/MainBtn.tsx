@@ -1,37 +1,51 @@
 import { useTranslation } from "react-i18next";
 
 interface MainBtnProps {
-    text: string;
-    onClick?: (e: React.MouseEvent<HTMLButtonElement>, ...args: any[]) => Promise<string | void> | string | void;
-    type?: "button" | "submit" | "reset";
-    disabled?: boolean;
+  text: string;
+  onClick?: (
+    e: React.MouseEvent<HTMLButtonElement>,
+    ...args: any[]
+  ) => Promise<string | void> | string | void;
+  type?: "button" | "submit" | "reset";
+  isPending?: boolean;
 }
 
 const MainBtn: React.FC<MainBtnProps> = ({
-    text,
-    onClick,
-    type = "button",
-    disabled = false,
+  text,
+  onClick,
+  type = "button",
+  isPending = false,
 }) => {
-    const { t } = useTranslation();
+  const { t } = useTranslation();
 
-    const handleClick = (e: React.MouseEvent<HTMLButtonElement>) => {
-        if (onClick) {
-            onClick(e);
-        }
-    };
+  const handleClick = (e: React.MouseEvent<HTMLButtonElement>) => {
+    if (onClick) {
+      onClick(e);
+    }
+  };
 
-    return (
-        <button
-            disabled={disabled}
-            type={type}
-            onClick={handleClick}
-            className="w-full flex items-center justify-center py-2 px-6 bg-blueColor text-white font-medium rounded-lg"
-        >
-            {t(text)}
-        </button>
-    );
+  return (
+    <button
+      disabled={isPending}
+      type={type}
+      onClick={handleClick}
+      aria-busy={isPending}
+      aria-label={isPending ? t("Submitting, please wait") : t(text)}
+      className="w-full flex items-center justify-center p-4 bg-gradient-to-t from-darkBlue to-lightBlue text-white  rounded-2xl shadow-xl disabled:opacity-85 disabled:cursor-not-allowed focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-darkBlue
+"
+    >
+      {isPending ? (
+        <div
+          className="w-6 h-6 border-4 border-white border-t-transparent rounded-full animate-spin"
+          role="status"
+          aria-live="polite"
+          aria-label={t("Loading")}
+        ></div>
+      ) : (
+        t(text)
+      )}
+    </button>
+  );
 };
 
 export default MainBtn;
-

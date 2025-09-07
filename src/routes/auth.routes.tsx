@@ -13,6 +13,12 @@ export const authRoutes = {
           element: lazyLoad(() => import("../features/auth/pages/Login")),
         },
         {
+          path: "register-with",
+          element: lazyLoad(
+            () => import("../features/auth/pages/RegisterWith")
+          ),
+        },
+        {
           path: "register",
           element: lazyLoad(() => import("../features/auth/pages/Register")),
         },

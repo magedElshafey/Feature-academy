@@ -12,11 +12,13 @@ export default {
         background: {
           light: "#ffffff",
           dark: "#0f172a",
+          babyBlue: "#F0EDFFCC",
         },
         text: {
           light: "#1e293b",
           dark: "#f8fafc",
           gray: "#828282",
+          red: "#FF0000",
         },
         darkBlue: "#0642BC",
         lightBlue: "#3274FF",

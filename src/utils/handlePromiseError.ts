@@ -1,7 +1,7 @@
 import { AxiosError } from "axios";
-import { toast } from "react-toastify";
+import { toast } from "sonner";
 
-const handlePromisError = (error) => {
+const handlePromisError = (error: unknown) => {
   if (error instanceof AxiosError && error.response) {
     toast.error(error.response.data.message);
   } else {

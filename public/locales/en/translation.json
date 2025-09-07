@@ -14,5 +14,13 @@
   "qutell technology": "qutell technology",
   "all rights reserved": "all rights reserved",
   "important links": "SiteMap",
-  "By logging in, you can use the site's features.": "By logging in, you can use the site's features."
+  "By logging in, you can use the site's features.": "By logging in, you can use the site's features.",
+  "forget password?": "forget password?",
+  "remember me": "remember me",
+  "user name is required": "user name is required",
+  "password must be at least 6 characters": "password must be at least 6 characters",
+  "don't have an account ?": "don't have an account ?",
+  "create an account": "create an account",
+  "Create a new account": "Create a new account",
+  "Sign in with facebook Account": "Sign in with facebook Account"
 }

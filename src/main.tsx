@@ -13,7 +13,12 @@ createRoot(document.getElementById("root")!).render(
     <QueryClientProvider client={queryClient}>
       <LanguageProvider>
         <ThemeProvider>
-          <Toaster position="top-center" richColors closeButton />
+          <Toaster
+            position="top-center"
+            richColors
+            closeButton
+            duration={3000}
+          />
           <RouterProvider router={router} />
         </ThemeProvider>
       </LanguageProvider>

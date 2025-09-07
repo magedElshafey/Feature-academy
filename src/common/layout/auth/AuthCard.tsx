@@ -25,7 +25,7 @@ const AuthCard: React.FC<AuthCardProps> = ({
             {t(title)}
           </h1>
           {description && (
-            <p className="mt-2 text-base text-text-gray dark:text-gray-400">
+            <p className="mt-2 text-sm text-text-gray dark:text-gray-400">
               {t(description)}
             </p>
           )}
