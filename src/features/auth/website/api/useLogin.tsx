@@ -1,6 +1,6 @@
 import { useMutation } from "@tanstack/react-query";
-import { Axios } from "../../../lib/axios/Axios";
-import { apiRoutes } from "../../../services/api-routes/apiRoutes";
+import { Axios } from "../../../../lib/axios/Axios";
+import { apiRoutes } from "../../../../services/api-routes/apiRoutes";
 const useLogin = () => {
   return useMutation({
     mutationKey: ["login"],

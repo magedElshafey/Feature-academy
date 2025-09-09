@@ -1,8 +1,9 @@
 import { z } from "zod";
+import { passwordSchema } from "./passwordSchema";
 
 export const loginSchema = z.object({
   username: z.string().min(1, "user name is required"),
-  password: z.string().min(6, "password must be at least 6 characters"),
+  password: passwordSchema,
   rememberMe: z.boolean().optional(),
 });
 

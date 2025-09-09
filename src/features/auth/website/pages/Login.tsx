@@ -1,11 +1,11 @@
 import { Link } from "react-router-dom";
-import MainInput from "../../../common/components/inputs/MainInput";
-import AuthCard from "../../../common/layout/auth/AuthCard";
+import MainInput from "../../../../common/components/inputs/MainInput";
+import AuthCard from "../../../../common/layout/auth/AuthCard";
 import { CiUser } from "react-icons/ci";
 import { GoKey } from "react-icons/go";
 import { useTranslation } from "react-i18next";
 import "../style/login-form.css";
-import MainBtn from "../../../common/components/buttons/MainBtn";
+import MainBtn from "../../../../common/components/buttons/MainBtn";
 import useLoginLogic from "../logic/useLoginLogic";
 const Login = () => {
   const { t } = useTranslation();
@@ -52,7 +52,7 @@ const Login = () => {
             {t("remember me")}
           </label>
         </div>
-        <div className="w-full flex-center mb-7 sm:mb-8 md:mb-9 lg:mb-10 xl:mb-12 2xl:mb-16">
+        <div className="w-full flex-center mb-7 sm:mb-8 md:mb-9 lg:mb-10">
           <div className="w-full md:w-[150px]">
             <MainBtn type="submit" text="login" isPending={isPending} />
           </div>

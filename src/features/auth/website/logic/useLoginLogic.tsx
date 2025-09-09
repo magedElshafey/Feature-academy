@@ -2,7 +2,7 @@ import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { type LoginSchemaType, loginSchema } from "../schema/loginSchema";
 import useLogin from "../api/useLogin";
-import handlePromisError from "../../../utils/handlePromiseError";
+import handlePromisError from "../../../../utils/handlePromiseError";
 import { toast } from "sonner";
 const useLoginLogic = () => {
   const { isPending, mutateAsync } = useLogin();

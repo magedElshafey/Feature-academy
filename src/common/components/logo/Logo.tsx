@@ -13,7 +13,7 @@ const Logo: React.FC<logoProps> = ({ logo }) => {
         alt="logo"
         src={logo}
         className={`${
-          isAuthPages ? "h-[60px]" : "h-[44px]"
+          isAuthPages ? "h-[50px]" : "h-[44px]"
         } w-auto object-contain`}
       />
     </Link>

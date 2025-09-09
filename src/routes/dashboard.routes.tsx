@@ -11,13 +11,13 @@ export const dashboardRoutes = {
       children: [
         {
           index: true,
-          element: lazyLoad(() => import("../features/dashboard/Home")),
+          element: lazyLoad(() => import("../features/home/dashboard/Home")),
         },
         {
           path: "chat",
           element: (
             <Guard allowedRoles={["customer_service"]}>
-              {lazyLoad(() => import("../features/dashboard/chat/Chat"))}
+              {lazyLoad(() => import("../features/chat/dashboard/Chat"))}
             </Guard>
           ),
         },

@@ -6,21 +6,39 @@ export const websiteRoutes = {
   children: [
     {
       index: true,
-      element: lazyLoad(() => import("../features/home/Home")),
+      element: lazyLoad(() => import("../features/home/website/Home")),
     },
     {
       path: "about",
-      element: lazyLoad(() => import("../features/static-pages/pages/About")),
+      element: lazyLoad(
+        () => import("../features/static-pages/website/pages/About")
+      ),
     },
     {
       path: "faq",
-      element: lazyLoad(() => import("../features/static-pages/pages/Faq")),
+      element: lazyLoad(
+        () => import("../features/static-pages/website/pages/Faq")
+      ),
+    },
+    {
+      path: "team",
+      element: lazyLoad(
+        () => import("../features/static-pages/website/pages/Team")
+      ),
+    },
+    {
+      path: "branches",
+      element: lazyLoad(
+        () => import("../features/static-pages/website/pages/Branches")
+      ),
     },
     {
       path: "my-profile",
       element: (
         <Guard requireAuth={true}>
-          {lazyLoad(() => import("../features/user-dashboard/MyProfile"))}
+          {lazyLoad(
+            () => import("../features/user/website/my-profile/MyProfile")
+          )}
         </Guard>
       ),
     },

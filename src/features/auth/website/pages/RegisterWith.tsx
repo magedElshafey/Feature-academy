@@ -1,4 +1,4 @@
-import AuthCard from "../../../common/layout/auth/AuthCard";
+import AuthCard from "../../../../common/layout/auth/AuthCard";
 import RegisterButton from "../components/register-with/RegisterButton";
 import RegisterByFacebook from "../components/register-with/RegisterByFacebook";
 import RgisterByGoogle from "../components/register-with/RgisterByGoogle";

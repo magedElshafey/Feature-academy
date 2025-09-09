@@ -1,5 +1,5 @@
 import { useTranslation } from "react-i18next";
-import facebook from "../../../../assets/facebook.png";
+import facebook from "../../../../../assets/facebook.png";
 import { toast } from "sonner";
 import { useNavigate, useLocation } from "react-router-dom";
 const RegisterByGoogle = () => {
